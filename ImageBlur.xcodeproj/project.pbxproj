@@ -13,6 +13,14 @@
 		7522B0711D8DDD2600AF3DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7522B06F1D8DDD2600AF3DAC /* Main.storyboard */; };
 		7522B0731D8DDD2600AF3DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7522B0721D8DDD2600AF3DAC /* Assets.xcassets */; };
 		7522B0761D8DDD2600AF3DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7522B0741D8DDD2600AF3DAC /* LaunchScreen.storyboard */; };
+		7522B07F1D8DDE6100AF3DAC /* TouchTrackerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522B07E1D8DDE6100AF3DAC /* TouchTrackerView.m */; };
+		7522B0821D8DDEC300AF3DAC /* UIBezierPath-Smoothing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522B0811D8DDEC300AF3DAC /* UIBezierPath-Smoothing.m */; };
+		7522B0851D8DDEF500AF3DAC /* UIBezierPath-Points.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522B0841D8DDEF500AF3DAC /* UIBezierPath-Points.m */; };
+		757FDF761D8F3D9F00C83DDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757FDF751D8F3D9F00C83DDF /* CoreGraphics.framework */; };
+		757FDF781D8F3DA500C83DDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757FDF771D8F3DA500C83DDF /* UIKit.framework */; };
+		757FDF7A1D8F3DAE00C83DDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757FDF791D8F3DAE00C83DDF /* Foundation.framework */; };
+		758178E41D90BFC100177DA6 /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 758178E31D90BFC100177DA6 /* UIImage+StackBlur.m */; };
+		758178E71D90CD8700177DA6 /* UIImage+ImageMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 758178E61D90CD8700177DA6 /* UIImage+ImageMask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,19 @@
 		7522B0721D8DDD2600AF3DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7522B0751D8DDD2600AF3DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7522B0771D8DDD2600AF3DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7522B07D1D8DDE6100AF3DAC /* TouchTrackerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchTrackerView.h; sourceTree = "<group>"; };
+		7522B07E1D8DDE6100AF3DAC /* TouchTrackerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerView.m; sourceTree = "<group>"; };
+		7522B0801D8DDEC300AF3DAC /* UIBezierPath-Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath-Smoothing.h"; sourceTree = "<group>"; };
+		7522B0811D8DDEC300AF3DAC /* UIBezierPath-Smoothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath-Smoothing.m"; sourceTree = "<group>"; };
+		7522B0831D8DDEF500AF3DAC /* UIBezierPath-Points.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath-Points.h"; sourceTree = "<group>"; };
+		7522B0841D8DDEF500AF3DAC /* UIBezierPath-Points.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath-Points.m"; sourceTree = "<group>"; };
+		757FDF751D8F3D9F00C83DDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		757FDF771D8F3DA500C83DDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		757FDF791D8F3DAE00C83DDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		758178E21D90BFC100177DA6 /* UIImage+StackBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StackBlur.h"; sourceTree = "<group>"; };
+		758178E31D90BFC100177DA6 /* UIImage+StackBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StackBlur.m"; sourceTree = "<group>"; };
+		758178E51D90CD8700177DA6 /* UIImage+ImageMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageMask.h"; sourceTree = "<group>"; };
+		758178E61D90CD8700177DA6 /* UIImage+ImageMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageMask.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757FDF7A1D8F3DAE00C83DDF /* Foundation.framework in Frameworks */,
+				757FDF781D8F3DA500C83DDF /* UIKit.framework in Frameworks */,
+				757FDF761D8F3D9F00C83DDF /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +68,7 @@
 			children = (
 				7522B0651D8DDD2600AF3DAC /* ImageBlur */,
 				7522B0641D8DDD2600AF3DAC /* Products */,
+				757FDF741D8F3D9F00C83DDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +87,16 @@
 				7522B06A1D8DDD2600AF3DAC /* AppDelegate.m */,
 				7522B06C1D8DDD2600AF3DAC /* ViewController.h */,
 				7522B06D1D8DDD2600AF3DAC /* ViewController.m */,
+				7522B07D1D8DDE6100AF3DAC /* TouchTrackerView.h */,
+				7522B07E1D8DDE6100AF3DAC /* TouchTrackerView.m */,
+				7522B0801D8DDEC300AF3DAC /* UIBezierPath-Smoothing.h */,
+				7522B0811D8DDEC300AF3DAC /* UIBezierPath-Smoothing.m */,
+				7522B0831D8DDEF500AF3DAC /* UIBezierPath-Points.h */,
+				7522B0841D8DDEF500AF3DAC /* UIBezierPath-Points.m */,
+				758178E21D90BFC100177DA6 /* UIImage+StackBlur.h */,
+				758178E31D90BFC100177DA6 /* UIImage+StackBlur.m */,
+				758178E51D90CD8700177DA6 /* UIImage+ImageMask.h */,
+				758178E61D90CD8700177DA6 /* UIImage+ImageMask.m */,
 				7522B06F1D8DDD2600AF3DAC /* Main.storyboard */,
 				7522B0721D8DDD2600AF3DAC /* Assets.xcassets */,
 				7522B0741D8DDD2600AF3DAC /* LaunchScreen.storyboard */,
@@ -77,6 +112,16 @@
 				7522B0671D8DDD2600AF3DAC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		757FDF741D8F3D9F00C83DDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				757FDF791D8F3DAE00C83DDF /* Foundation.framework */,
+				757FDF771D8F3DA500C83DDF /* UIKit.framework */,
+				757FDF751D8F3D9F00C83DDF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7522B0821D8DDEC300AF3DAC /* UIBezierPath-Smoothing.m in Sources */,
+				758178E71D90CD8700177DA6 /* UIImage+ImageMask.m in Sources */,
 				7522B06E1D8DDD2600AF3DAC /* ViewController.m in Sources */,
+				7522B0851D8DDEF500AF3DAC /* UIBezierPath-Points.m in Sources */,
+				758178E41D90BFC100177DA6 /* UIImage+StackBlur.m in Sources */,
 				7522B06B1D8DDD2600AF3DAC /* AppDelegate.m in Sources */,
 				7522B0681D8DDD2600AF3DAC /* main.m in Sources */,
+				7522B07F1D8DDE6100AF3DAC /* TouchTrackerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageBlur/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jdmaestre.ImageBlur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageBlur/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jdmaestre.ImageBlur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +361,7 @@
 				7522B07C1D8DDD2600AF3DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

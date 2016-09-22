@@ -1,23 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y33-lT-ser">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6BJ-wx-IJG">
+                                        <color key="backgroundColor" red="0.031372549020000001" green="0.16862745100000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6BJ-wx-IJG" secondAttribute="trailing" id="5Ph-DC-bfy"/>
+                                    <constraint firstAttribute="bottom" secondItem="6BJ-wx-IJG" secondAttribute="bottom" id="O5r-nZ-WdW"/>
+                                    <constraint firstItem="6BJ-wx-IJG" firstAttribute="top" secondItem="y33-lT-ser" secondAttribute="top" id="O9R-Bq-kO9"/>
+                                    <constraint firstItem="6BJ-wx-IJG" firstAttribute="leading" secondItem="y33-lT-ser" secondAttribute="leading" id="zua-eS-EfA"/>
+                                </constraints>
+                            </view>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minimumValue="1" maximumValue="100" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="uev-B3-4Yo">
+                                <connections>
+                                    <action selector="blurStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Akg-pL-abP"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXP-La-xSQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxQ-rU-gd1">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Deshacer blur"/>
+                                <connections>
+                                    <action selector="undoPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uam-Ff-aQd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uev-B3-4Yo" secondAttribute="trailing" constant="20" id="0Av-z9-OUG"/>
+                            <constraint firstAttribute="trailing" secondItem="KXP-La-xSQ" secondAttribute="trailing" constant="46" id="12b-Hy-OLH"/>
+                            <constraint firstItem="y33-lT-ser" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4hW-0f-7Mm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y33-lT-ser" secondAttribute="bottom" id="Gul-N8-zEy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uev-B3-4Yo" secondAttribute="bottom" constant="20" id="TCL-Cq-yxm"/>
+                            <constraint firstItem="rxQ-rU-gd1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="TFh-2Q-dMc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KXP-La-xSQ" secondAttribute="bottom" constant="57" id="ZH2-ZF-l38"/>
+                            <constraint firstAttribute="trailing" secondItem="y33-lT-ser" secondAttribute="trailing" id="cCo-aY-zZu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rxQ-rU-gd1" secondAttribute="bottom" constant="20" id="q9O-5q-wTH"/>
+                            <constraint firstItem="y33-lT-ser" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wwh-Mp-ztG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blurLabel" destination="KXP-La-xSQ" id="9oU-iJ-mEr"/>
+                        <outlet property="blurStepper" destination="uev-B3-4Yo" id="DL7-3G-IO5"/>
+                        <outlet property="contentView" destination="y33-lT-ser" id="zrM-j8-FIh"/>
+                        <outlet property="mainImage" destination="6BJ-wx-IJG" id="rFM-5E-9am"/>
+                        <outlet property="undoButton" destination="rxQ-rU-gd1" id="ehI-6k-zBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
