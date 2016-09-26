@@ -170,7 +170,7 @@
 
 - (void)updateBlurValues{
     self.blurRadio = self.blurStepper.value;
-    self.blurLabel.text = [NSString stringWithFormat:@" %f", self.blurStepper.value] ;
+    self.blurLabel.text = [NSString stringWithFormat:@" %.00f", self.blurStepper.value] ;
     
 }
 
@@ -180,7 +180,6 @@
     lastBlurImage = [self.blurArray lastObject];
     [lastBlurImage removeFromSuperview];
     [self.blurArray removeLastObject];
-    NSLog(@"undo Presses");
 }
 
 - (void)initResouces {

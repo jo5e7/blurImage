@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,12 +33,18 @@
                                     <constraint firstItem="6BJ-wx-IJG" firstAttribute="leading" secondItem="y33-lT-ser" secondAttribute="leading" id="zua-eS-EfA"/>
                                 </constraints>
                             </view>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minimumValue="1" maximumValue="100" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="uev-B3-4Yo">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minimumValue="1" maximumValue="40" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="uev-B3-4Yo">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uev-B3-4Yo" secondAttribute="height" multiplier="94:29" id="POh-vw-LQG"/>
+                                </constraints>
                                 <connections>
                                     <action selector="blurStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Akg-pL-abP"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXP-La-xSQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KXP-La-xSQ" secondAttribute="height" multiplier="94:21" id="EFg-h2-3of"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -54,7 +61,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="uev-B3-4Yo" secondAttribute="trailing" constant="20" id="0Av-z9-OUG"/>
-                            <constraint firstAttribute="trailing" secondItem="KXP-La-xSQ" secondAttribute="trailing" constant="46" id="12b-Hy-OLH"/>
+                            <constraint firstAttribute="trailing" secondItem="KXP-La-xSQ" secondAttribute="trailing" constant="20" id="12b-Hy-OLH"/>
                             <constraint firstItem="y33-lT-ser" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4hW-0f-7Mm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y33-lT-ser" secondAttribute="bottom" id="Gul-N8-zEy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uev-B3-4Yo" secondAttribute="bottom" constant="20" id="TCL-Cq-yxm"/>
@@ -75,6 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.6953125" y="103.90625"/>
         </scene>
     </scenes>
 </document>
