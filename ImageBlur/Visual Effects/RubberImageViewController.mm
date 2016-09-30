@@ -53,6 +53,8 @@ const float GRIDSIZE = 10;
 
 - (void)loadView {
     self.view = [[EAGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.blurRadio = 15;
+    self.blurArray = [[NSMutableArray alloc]init];
 }
 
 - (void)awakeFromNib
@@ -222,6 +224,8 @@ const float GRIDSIZE = 10;
         }];
         
         [self.view insertSubview:self.trackerView atIndex:1];
+        //[self.view bringSubviewToFront:self.trackerView];
+        
     }
 }
 
@@ -304,7 +308,7 @@ const float GRIDSIZE = 10;
     [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
     UIImage *imagetoBlur = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    UIImage *blurImage = [imagetoBlur stackBlur:35];
+    UIImage *blurImage = [imagetoBlur stackBlur:self.blurRadio];
     
     UIImage * newImage = [UIImage maskImage:blurImage withMask:maskImage];
     
@@ -350,7 +354,10 @@ const float GRIDSIZE = 10;
     CGRect frame = blurView.frame;
     frame.origin = path.bounds.origin;
     [blurView setFrame:frame];
-    [self.view addSubview:blurView];
+    //[self.view addSubview:blurView];
+    [self.view insertSubview:blurView belowSubview:self.trackerView];
+    [self.blurArray addObject:blurView];
+    
     
 }
 

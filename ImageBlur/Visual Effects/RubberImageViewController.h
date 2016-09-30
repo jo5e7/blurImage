@@ -36,6 +36,10 @@
 
 @property (nonatomic, copy) void (^trackTouchesInitiated)();
 
+//Blur radio
+@property int blurRadio;
+@property (strong, nonatomic) NSMutableArray *blurArray;
+
 - (void)startAnimation;
 - (void)stopAnimation;
 

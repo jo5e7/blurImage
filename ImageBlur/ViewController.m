@@ -31,27 +31,27 @@
     CGFloat scale = [UIScreen mainScreen].scale;
     NSLog(@" %f", scale);
     
-    [self setupTrackerViewWithBool:true FinishBlock:^(UIBezierPath *path) {
-    
-        UIImage *mask = [[UIImage alloc]init];
-        mask = [self createMaskFromPath:path];
-        UIImage *image = [[UIImage alloc]init];
-        image = [self createImageFromPath:path];
-        
-        UIImage *maskedImage = [[UIImage alloc]init];
-        maskedImage = [self maskImage:image withMask:mask];
-        
-        UIImageView *iv = [[UIImageView alloc]initWithImage:maskedImage];
-        CGPoint centre = CGPointMake(path.bounds.origin.x, path.bounds.origin.y);
-        [iv setCenter:centre];
-        
-        CGRect newFrame = iv.frame;
-        newFrame = path.bounds;
-        iv.frame = newFrame;
-        
-        [self.contentView addSubview:iv];
-        [self.blurArray addObject:iv];
-        }];
+//    [self setupTrackerViewWithBool:true FinishBlock:^(UIBezierPath *path) {
+//    
+//        UIImage *mask = [[UIImage alloc]init];
+//        mask = [self createMaskFromPath:path];
+//        UIImage *image = [[UIImage alloc]init];
+//        image = [self createImageFromPath:path];
+//        
+//        UIImage *maskedImage = [[UIImage alloc]init];
+//        maskedImage = [self maskImage:image withMask:mask];
+//        
+//        UIImageView *iv = [[UIImageView alloc]initWithImage:maskedImage];
+//        CGPoint centre = CGPointMake(path.bounds.origin.x, path.bounds.origin.y);
+//        [iv setCenter:centre];
+//        
+//        CGRect newFrame = iv.frame;
+//        newFrame = path.bounds;
+//        iv.frame = newFrame;
+//        
+//        [self.contentView addSubview:iv];
+//        [self.blurArray addObject:iv];
+//        }];
 }
 
 - (void)setupTrackerViewWithBool:(BOOL)track FinishBlock:(void(^)(UIBezierPath *))block
@@ -170,7 +170,7 @@
 
 
 - (void)updateBlurValues{
-    self.blurRadio = self.blurStepper.value;
+    self.rubberController.blurRadio = self.blurStepper.value;
     self.blurLabel.text = [NSString stringWithFormat:@" %.00f", self.blurStepper.value] ;
     
 }
@@ -178,9 +178,9 @@
 - (IBAction)undoPressed {
     
     UIImageView *lastBlurImage = [[UIImageView alloc]init];
-    lastBlurImage = [self.blurArray lastObject];
+    lastBlurImage = [self.rubberController.blurArray lastObject];
     [lastBlurImage removeFromSuperview];
-    [self.blurArray removeLastObject];
+    [self.rubberController.blurArray removeLastObject];
 }
 
 - (void)initBlurResouces {
@@ -199,7 +199,7 @@
 //    CGRect rubberNewFrame = self.rubberController.view.frame;
 //    rubberNewFrame.origin.y += barHeight;
 //    self.rubberController.view.frame = rubberNewFrame;
-    [self.view addSubview:self.rubberController.view];
+    [self.contentView addSubview:self.rubberController.view];
     [self.rubberController endAppearanceTransition];
     
     //self.rubberController.receiveTouches = true;
