@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TouchTrackerView.h"
+#import "RubberImageViewController.h"
 
 @interface ViewController : UIViewController
 
@@ -28,6 +29,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *blurLabel;
 @property (weak, nonatomic) IBOutlet UIButton *undoButton;
 
+//Rubber
+@property (nonatomic, strong) RubberImageViewController *rubberController;
 
 @end
 

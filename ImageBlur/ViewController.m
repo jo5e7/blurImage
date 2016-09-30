@@ -22,10 +22,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.originalImage = [UIImage imageNamed:@"imagen"];
-    self.mainImage.image = self.originalImage;
+    //self.mainImage.image = self.originalImage;
     
     
-    [self initResouces];
+    [self initBlurResouces];
+    [self initRubberResouces];
 
     CGFloat scale = [UIScreen mainScreen].scale;
     NSLog(@" %f", scale);
@@ -182,9 +183,28 @@
     [self.blurArray removeLastObject];
 }
 
-- (void)initResouces {
+- (void)initBlurResouces {
     [self updateBlurValues];
     self.blurArray = [[NSMutableArray alloc]init];
 }
+
+- (void)initRubberResouces {
+                                                           
+    self.rubberController = (RubberImageViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"rubberViewController"];
+    [self.rubberController setSelectedImage:self.originalImage];
+    [self.rubberController.view setFrame:self.view.frame];
+    [self.rubberController beginAppearanceTransition:YES animated:YES];
+    //To solve status bar height desphase when adding to contentview
+//    float barHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+//    CGRect rubberNewFrame = self.rubberController.view.frame;
+//    rubberNewFrame.origin.y += barHeight;
+//    self.rubberController.view.frame = rubberNewFrame;
+    [self.view addSubview:self.rubberController.view];
+    [self.rubberController endAppearanceTransition];
+    
+    self.rubberController.receiveTouches = true;
+    //[self.rubberController setWhiteningArea:true];
+}
+
 
 @end

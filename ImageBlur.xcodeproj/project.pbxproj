@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750FF1CF1D9A4FA7007EC1DC /* RubberImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 750FF1CB1D9A4FA7007EC1DC /* RubberImage.cpp */; };
+		750FF1D01D9A4FA7007EC1DC /* v2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 750FF1CD1D9A4FA7007EC1DC /* v2.cpp */; };
+		750FF1D41D9A4FED007EC1DC /* RubberImageViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 750FF1D31D9A4FED007EC1DC /* RubberImageViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		750FF1D81D9A50AA007EC1DC /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750FF1D71D9A50AA007EC1DC /* EAGLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		750FF1DD1D9A514E007EC1DC /* ClonedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750FF1DB1D9A514E007EC1DC /* ClonedView.m */; };
+		750FF1DE1D9A514E007EC1DC /* ClonedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 750FF1DC1D9A514E007EC1DC /* ClonedView.xib */; };
+		750FF1E11D9A52FA007EC1DC /* UIBezierPath+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 750FF1E01D9A52FA007EC1DC /* UIBezierPath+Image.m */; };
+		750FF1E51D9A53F2007EC1DC /* UIImage+ScaledImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 750FF1E41D9A53F2007EC1DC /* UIImage+ScaledImage.m */; };
+		750FF1E71D9A566B007EC1DC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750FF1E61D9A566B007EC1DC /* OpenGLES.framework */; };
 		7522B0681D8DDD2600AF3DAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522B0671D8DDD2600AF3DAC /* main.m */; };
 		7522B06B1D8DDD2600AF3DAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522B06A1D8DDD2600AF3DAC /* AppDelegate.m */; };
 		7522B06E1D8DDD2600AF3DAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7522B06D1D8DDD2600AF3DAC /* ViewController.m */; };
@@ -24,6 +33,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750FF1CA1D9A4FA7007EC1DC /* Include.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Include.h; path = "Rubber Image/Include.h"; sourceTree = "<group>"; };
+		750FF1CB1D9A4FA7007EC1DC /* RubberImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RubberImage.cpp; path = "Rubber Image/RubberImage.cpp"; sourceTree = "<group>"; };
+		750FF1CC1D9A4FA7007EC1DC /* RubberImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubberImage.h; path = "Rubber Image/RubberImage.h"; sourceTree = "<group>"; };
+		750FF1CD1D9A4FA7007EC1DC /* v2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = v2.cpp; path = "Rubber Image/v2.cpp"; sourceTree = "<group>"; };
+		750FF1CE1D9A4FA7007EC1DC /* v2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = v2.h; path = "Rubber Image/v2.h"; sourceTree = "<group>"; };
+		750FF1D21D9A4FED007EC1DC /* RubberImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubberImageViewController.h; path = "Visual Effects/RubberImageViewController.h"; sourceTree = "<group>"; };
+		750FF1D31D9A4FED007EC1DC /* RubberImageViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RubberImageViewController.mm; path = "Visual Effects/RubberImageViewController.mm"; sourceTree = "<group>"; };
+		750FF1D61D9A50AA007EC1DC /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = "Visual Effects/EAGLView.h"; sourceTree = "<group>"; };
+		750FF1D71D9A50AA007EC1DC /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EAGLView.m; path = "Visual Effects/EAGLView.m"; sourceTree = "<group>"; };
+		750FF1DA1D9A514E007EC1DC /* ClonedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClonedView.h; path = DSViews/ClonedView.h; sourceTree = "<group>"; };
+		750FF1DB1D9A514E007EC1DC /* ClonedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClonedView.m; path = DSViews/ClonedView.m; sourceTree = "<group>"; };
+		750FF1DC1D9A514E007EC1DC /* ClonedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ClonedView.xib; path = DSViews/ClonedView.xib; sourceTree = "<group>"; };
+		750FF1DF1D9A52FA007EC1DC /* UIBezierPath+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Image.h"; sourceTree = "<group>"; };
+		750FF1E01D9A52FA007EC1DC /* UIBezierPath+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Image.m"; sourceTree = "<group>"; };
+		750FF1E31D9A53F2007EC1DC /* UIImage+ScaledImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ScaledImage.h"; path = "Categories/UIImage+ScaledImage.h"; sourceTree = "<group>"; };
+		750FF1E41D9A53F2007EC1DC /* UIImage+ScaledImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ScaledImage.m"; path = "Categories/UIImage+ScaledImage.m"; sourceTree = "<group>"; };
+		750FF1E61D9A566B007EC1DC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7522B0631D8DDD2600AF3DAC /* ImageBlur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageBlur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7522B0671D8DDD2600AF3DAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7522B0691D8DDD2600AF3DAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750FF1E71D9A566B007EC1DC /* OpenGLES.framework in Frameworks */,
 				757FDF7A1D8F3DAE00C83DDF /* Foundation.framework in Frameworks */,
 				757FDF781D8F3DA500C83DDF /* UIKit.framework in Frameworks */,
 				757FDF761D8F3D9F00C83DDF /* CoreGraphics.framework in Frameworks */,
@@ -63,6 +90,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		750FF1D11D9A4FC3007EC1DC /* Rubber Image */ = {
+			isa = PBXGroup;
+			children = (
+				750FF1CA1D9A4FA7007EC1DC /* Include.h */,
+				750FF1CB1D9A4FA7007EC1DC /* RubberImage.cpp */,
+				750FF1CC1D9A4FA7007EC1DC /* RubberImage.h */,
+				750FF1CD1D9A4FA7007EC1DC /* v2.cpp */,
+				750FF1CE1D9A4FA7007EC1DC /* v2.h */,
+			);
+			name = "Rubber Image";
+			sourceTree = "<group>";
+		};
+		750FF1D51D9A4FF0007EC1DC /* Visual Effects */ = {
+			isa = PBXGroup;
+			children = (
+				750FF1D61D9A50AA007EC1DC /* EAGLView.h */,
+				750FF1D71D9A50AA007EC1DC /* EAGLView.m */,
+				750FF1D21D9A4FED007EC1DC /* RubberImageViewController.h */,
+				750FF1D31D9A4FED007EC1DC /* RubberImageViewController.mm */,
+			);
+			name = "Visual Effects";
+			sourceTree = "<group>";
+		};
+		750FF1D91D9A5143007EC1DC /* DSViews */ = {
+			isa = PBXGroup;
+			children = (
+				750FF1DA1D9A514E007EC1DC /* ClonedView.h */,
+				750FF1DB1D9A514E007EC1DC /* ClonedView.m */,
+				750FF1DC1D9A514E007EC1DC /* ClonedView.xib */,
+			);
+			name = DSViews;
+			sourceTree = "<group>";
+		};
+		750FF1E21D9A53E4007EC1DC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				750FF1E31D9A53F2007EC1DC /* UIImage+ScaledImage.h */,
+				750FF1E41D9A53F2007EC1DC /* UIImage+ScaledImage.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		7522B05A1D8DDD2600AF3DAC = {
 			isa = PBXGroup;
 			children = (
@@ -83,20 +152,17 @@
 		7522B0651D8DDD2600AF3DAC /* ImageBlur */ = {
 			isa = PBXGroup;
 			children = (
+				750FF1E21D9A53E4007EC1DC /* Categories */,
+				750FF1D91D9A5143007EC1DC /* DSViews */,
+				750FF1D51D9A4FF0007EC1DC /* Visual Effects */,
+				750FF1D11D9A4FC3007EC1DC /* Rubber Image */,
+				7569A5051D995C3F00E5C2A6 /* ImagesResources */,
 				7522B0691D8DDD2600AF3DAC /* AppDelegate.h */,
 				7522B06A1D8DDD2600AF3DAC /* AppDelegate.m */,
 				7522B06C1D8DDD2600AF3DAC /* ViewController.h */,
 				7522B06D1D8DDD2600AF3DAC /* ViewController.m */,
 				7522B07D1D8DDE6100AF3DAC /* TouchTrackerView.h */,
 				7522B07E1D8DDE6100AF3DAC /* TouchTrackerView.m */,
-				7522B0801D8DDEC300AF3DAC /* UIBezierPath-Smoothing.h */,
-				7522B0811D8DDEC300AF3DAC /* UIBezierPath-Smoothing.m */,
-				7522B0831D8DDEF500AF3DAC /* UIBezierPath-Points.h */,
-				7522B0841D8DDEF500AF3DAC /* UIBezierPath-Points.m */,
-				758178E21D90BFC100177DA6 /* UIImage+StackBlur.h */,
-				758178E31D90BFC100177DA6 /* UIImage+StackBlur.m */,
-				758178E51D90CD8700177DA6 /* UIImage+ImageMask.h */,
-				758178E61D90CD8700177DA6 /* UIImage+ImageMask.m */,
 				7522B06F1D8DDD2600AF3DAC /* Main.storyboard */,
 				7522B0721D8DDD2600AF3DAC /* Assets.xcassets */,
 				7522B0741D8DDD2600AF3DAC /* LaunchScreen.storyboard */,
@@ -114,9 +180,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7569A5051D995C3F00E5C2A6 /* ImagesResources */ = {
+			isa = PBXGroup;
+			children = (
+				750FF1DF1D9A52FA007EC1DC /* UIBezierPath+Image.h */,
+				750FF1E01D9A52FA007EC1DC /* UIBezierPath+Image.m */,
+				7522B0801D8DDEC300AF3DAC /* UIBezierPath-Smoothing.h */,
+				7522B0811D8DDEC300AF3DAC /* UIBezierPath-Smoothing.m */,
+				7522B0831D8DDEF500AF3DAC /* UIBezierPath-Points.h */,
+				7522B0841D8DDEF500AF3DAC /* UIBezierPath-Points.m */,
+				758178E21D90BFC100177DA6 /* UIImage+StackBlur.h */,
+				758178E31D90BFC100177DA6 /* UIImage+StackBlur.m */,
+				758178E51D90CD8700177DA6 /* UIImage+ImageMask.h */,
+				758178E61D90CD8700177DA6 /* UIImage+ImageMask.m */,
+			);
+			name = ImagesResources;
+			sourceTree = "<group>";
+		};
 		757FDF741D8F3D9F00C83DDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				750FF1E61D9A566B007EC1DC /* OpenGLES.framework */,
 				757FDF791D8F3DAE00C83DDF /* Foundation.framework */,
 				757FDF771D8F3DA500C83DDF /* UIKit.framework */,
 				757FDF751D8F3D9F00C83DDF /* CoreGraphics.framework */,
@@ -185,6 +269,7 @@
 				7522B0761D8DDD2600AF3DAC /* LaunchScreen.storyboard in Resources */,
 				7522B0731D8DDD2600AF3DAC /* Assets.xcassets in Resources */,
 				7522B0711D8DDD2600AF3DAC /* Main.storyboard in Resources */,
+				750FF1DE1D9A514E007EC1DC /* ClonedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,12 +280,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750FF1D41D9A4FED007EC1DC /* RubberImageViewController.mm in Sources */,
 				7522B0821D8DDEC300AF3DAC /* UIBezierPath-Smoothing.m in Sources */,
 				758178E71D90CD8700177DA6 /* UIImage+ImageMask.m in Sources */,
 				7522B06E1D8DDD2600AF3DAC /* ViewController.m in Sources */,
 				7522B0851D8DDEF500AF3DAC /* UIBezierPath-Points.m in Sources */,
+				750FF1CF1D9A4FA7007EC1DC /* RubberImage.cpp in Sources */,
+				750FF1D01D9A4FA7007EC1DC /* v2.cpp in Sources */,
+				750FF1DD1D9A514E007EC1DC /* ClonedView.m in Sources */,
 				758178E41D90BFC100177DA6 /* UIImage+StackBlur.m in Sources */,
+				750FF1E11D9A52FA007EC1DC /* UIBezierPath+Image.m in Sources */,
+				750FF1E51D9A53F2007EC1DC /* UIImage+ScaledImage.m in Sources */,
 				7522B06B1D8DDD2600AF3DAC /* AppDelegate.m in Sources */,
+				750FF1D81D9A50AA007EC1DC /* EAGLView.m in Sources */,
 				7522B0681D8DDD2600AF3DAC /* main.m in Sources */,
 				7522B07F1D8DDE6100AF3DAC /* TouchTrackerView.m in Sources */,
 			);
