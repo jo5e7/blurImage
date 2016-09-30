@@ -202,8 +202,8 @@
     [self.view addSubview:self.rubberController.view];
     [self.rubberController endAppearanceTransition];
     
-    self.rubberController.receiveTouches = true;
-    //[self.rubberController setWhiteningArea:true];
+    //self.rubberController.receiveTouches = true;
+    [self.rubberController setWhiteningArea:true];
 }
 
 
