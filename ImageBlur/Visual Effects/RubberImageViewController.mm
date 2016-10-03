@@ -124,7 +124,15 @@ const float GRIDSIZE = 10;
     GLuint texture_handle;
 
     // Creates a Core Graphics image from an image file
+    
     CGSize newSize = [UIScreen mainScreen].bounds.size;
+    //To solve status bar height desphase when adding to contentview
+    float barHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    newSize.height -= barHeight;
+    //    CGRect rubberNewFrame = self.rubberController.view.frame;
+    //    rubberNewFrame.origin.y += barHeight;
+
+    
     CGImageRef spriteImage = [self.selectedImage imageScaledToSize:newSize].CGImage;
     // Get the width and height of the image
     size_t width = 1024;//CGImageGetWidth(spriteImage);

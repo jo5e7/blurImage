@@ -8,7 +8,7 @@
 
 
 #import "ViewController.h"
-#import <QuartzCore/QuartzCore.h>
+//#import <QuartzCore/QuartzCore.h>
 #import "UIImage+StackBlur.h"
 
 
